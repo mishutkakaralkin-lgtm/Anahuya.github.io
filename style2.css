@@ -1,0 +1,375 @@
+body {
+    background-color: black;
+    background-image: url(wallhaven-p9xwge.jpg);
+    background-size: cover;
+    color:rgb(0, 213, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(114, 187, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+ol {
+    text-align: left;
+    font-size: 50px
+}
+
+ul span {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.photo {
+    display: inline-block;
+    width: 18%;
+    background-color: rgb(0, 18, 72);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid rgba(255, 153, 0);
+    padding: 12px 24px;
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 2s;
+    animation: myAnim 1s linear forwards;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    filter: grayscale(100%);
+    transform: scale(1.0);
+    transition: all 1s;
+}
+
+.photo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.photo h5 {
+    color: cyan;
+}
+
+a {
+    font-size: 50px;
+    color:rgb(42, 0, 82);
+}
+
+a:hover {
+    color: rgb(217, 177, 255);
+}
+
+.avatars {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+
+.avatar {
+    display:block;
+    max-width: 400px;
+    background-color: black;
+    border: 5px solid rgba(255, 183, 0);
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: all 2s;
+    animation: float 2s linear infinite;
+}
+
+.avatar {
+    width: 100%
+}
+
+.btn-wrap {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgba(17, 0, 255);
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px 24px;
+    margin: 50px;
+    border: none;
+    border-bottom: 5px solid rgba(0, 13, 70);
+    color: rgba(255, 255, 255);
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0);
+    animation: blink 1s linear infinite;
+}
+
+.btn:hover {
+    background-color: rgba(127, 137, 255);
+    animation: pulse 2s infinite;
+}
+
+.btn:active {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0);
+    transform: translateY(4px);
+    border-bottom: 2px solid rgb(0, 0, 70);
+}   
+
+.card {
+    background-color: rgba(239, 156, 255, 0.3);
+    border: 10px solid rgba(94, 255, 0);
+    border-radius: 15px;
+    color: rgba(0, 255, 242);
+    padding: 6px 12px;
+    margin: 100px auto;
+    font-size: 20px;
+    max-width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2 {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.card li {
+    text-align: left;
+    font-size: 30px;
+}
+
+.card p {
+    font-size: 40px;
+    color: rgba(94, 255, 0);
+}
+
+.rockstar-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.RockstarGames {
+    display: block;
+    width: 40%;
+    max-width: 45%;
+    height: auto;
+    animation: based 5s linear infinite;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+span {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border: 10px solid rgb(255, 183, 0)
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0;
+    animation: opacity 15s linear infinite;
+}
+
+.s1 {
+    animation-delay: 0s;
+}
+
+.s2 {
+    animation-delay: 3s;
+}
+
+.s3 {
+    animation-delay: 6s;
+}
+
+.s4 {
+    animation-delay: 9s;
+}
+
+.s5 {
+    animation-delay: 12s;
+}
+
+nav {
+    background-color: rgba(61, 0, 73);
+    padding: 12px;
+    text-align: center;
+    border-bottom: 5px solid rgba(24, 67, 0);
+}
+
+nav a {
+    display: inline-block;
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 12px 24px;
+    margin: 0 6px;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 72, 68);
+    color: rgba(61, 0, 73);
+}
+
+nav a.active:hover {
+    background-color: rgba(0, 72, 68);
+    color: rgba(61, 0, 73);
+}
+
+.active {
+    background-color: rgba(24, 67, 0);
+}
+
+footer {
+    background-color: rgba(43, 0, 83);
+    color: white;
+    padding: 30px
+}
+
+@keyframes myAnim {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+@media(max-width: 700px) {
+    .page {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .photo {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 15px auto;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .slider {
+        display: block;
+        width: 100%;
+        max-height: 300px;
+        max-width: none;
+        margin: 15px auto;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 15px auto;
+    }
+
+}
+
+@keyframes based {
+from {
+    rotate: 0deg;
+}
+to {
+    rotate: 360deg;
+}
+}
+
+@keyframes float {
+0% {
+    transform: translateY(0px);
+}
+50% {
+    transform: translateY(40px);
+}
+100% {
+    transform: translateY(0px);
+}
+}
+
+@keyframes pulse {
+0% {
+    opacity: 1;
+    transform: scale(1.0);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0);
+}
+50% {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0);
+}
+100% {
+    transform: scale(1.0);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0);
+}
+}
+
+@keyframes blink {
+0% { opacity: 0; }
+50% { opacity: 0.5; }
+100% { opacity: 1; }
+}
+
+@keyframes opacity {
+0% {opacity: 0;}
+15% {opacity: 1;}
+33% {opacity: 1;}
+45% {opacity: 0;}
+100%{opacity: 0;}
+}
